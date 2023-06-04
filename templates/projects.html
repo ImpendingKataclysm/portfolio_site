@@ -4,4 +4,10 @@
 {% block heading %}Project Portfolio{% endblock %}
 {% block content %}
     <p>Here are some projects that I've built:</p>
+    <dl>
+    {% for row in project_list %}
+        <dt>{{ row.name }}</dt>
+        <dl>{{ row.description }}</dl>
+    {% endfor %}
+    </dl>
 {% endblock %}
