@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.views import generic
 
 from .models import Project
+from .forms import ContactForm
 
 
 class HomePage(generic.TemplateView):
@@ -19,3 +20,12 @@ class ProjectList(generic.ListView):
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super().get_context_data(**kwargs)
         return context
+
+
+class ContactPage(generic.FormView):
+    form_class = ContactForm
+    template_name = 'contact.html'
+    success_url = '#'
+
+    def form_valid(self, form):
+        return super().form_valid(form)
