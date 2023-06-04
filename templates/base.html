@@ -6,7 +6,17 @@
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
-    <h1>{% block heading %}{% endblock %}</h1>
-    {% block content %}{% endblock %}
+    <div>
+       <nav>
+           <ul>
+               <li><a href="{% url 'home' %}">Home</a></li>
+               <li><a href="{% url 'about' %}">About</a></li>
+           </ul>
+       </nav>
+        <main>
+            <h1>{% block heading %}{% endblock %}</h1>
+            {% block content %}{% endblock %}
+        </main>
+    </div>
 </body>
 </html>
