@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}Portfolio{% endblock %}
 {% block heading %}Project Portfolio{% endblock %}
@@ -8,7 +9,7 @@
     {% for row in project_list %}
         <dt>{{ row.name }}</dt>
         <dd>{{ row.description }}</dd>
-        <dd><img src="{{ row.imag_url }}" alt="{{ row.image_alt }}"></dd>
+        <dd><img src="{% static row.image_url %}" alt="{{ row.image_alt }}"></dd>
         <dd><a href="{{ row.source_code_url }}" target="_blank">View Source Code</a></dd>
         {% if row.live_url %}
             <dd><a href="{{ row.live_url }}" target="_blank">View Live</a></dd>
