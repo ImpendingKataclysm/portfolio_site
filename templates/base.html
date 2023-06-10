@@ -7,14 +7,19 @@
 </head>
 <body>
     <div>
-       <nav>
-           <ul>
-               <li><a href="{% url 'home' %}">Home</a></li>
-               <li><a href="{% url 'about' %}">About</a></li>
-               <li><a href="{% url 'projects' %}">Projects</a></li>
-               <li><a href="{% url 'contact' %}">Contact</a></li>
-           </ul>
-       </nav>
+       <header>
+           <div>
+               <a href="{% url 'home' %}">Katie Janzen - Web Developer</a>
+           </div>
+           <nav>
+               <ul>
+                   <li><a href="{% url 'home' %}">Home</a></li>
+                   <li><a href="{% url 'about' %}">About</a></li>
+                   <li><a href="{% url 'projects' %}">Projects</a></li>
+                   <li><a href="{% url 'contact' %}">Contact</a></li>
+               </ul>
+           </nav>
+       </header>
         <main>
             <h1>{% block heading %}{% endblock %}</h1>
             {% block content %}{% endblock %}
