@@ -16,8 +16,24 @@ body {
     font-family: "Roboto Light", sans-serif;
 }
 
-h1, h2 {
+h1, h2, .title a {
     font-family: "Roboto", sans-serif;
+}
+
+/* Header */
+.header-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-style: italic;
+    padding: 0.3rem;
+}
+
+.title a:link, .title a:visited {
+    text-decoration: none;
 }
 
 /* Nav menu button */
