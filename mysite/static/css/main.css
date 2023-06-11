@@ -56,3 +56,15 @@ nav {
 nav.show {
     display: block;
 }
+
+/* Wide Screen */
+@media screen and (min-width: 1080px) {
+    /* Nav bar */
+    nav {
+        display: block;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+}
