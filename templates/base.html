@@ -1,9 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Katie Janzen - {% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
 </head>
 <body>
     <div>
@@ -11,7 +13,10 @@
            <div>
                <a href="{% url 'home' %}">Katie Janzen - Web Developer</a>
            </div>
-           <nav>
+           <div class="nav-btn" id="nav-display">
+               <img src="{% static 'images/nav_icon.png' %}" alt="nav button icon">
+           </div>
+           <nav id="navbar">
                <ul>
                    <li><a href="{% url 'home' %}">Home</a></li>
                    <li><a href="{% url 'about' %}">About</a></li>
@@ -25,5 +30,6 @@
             {% block content %}{% endblock %}
         </main>
     </div>
+    <script src="{% static 'js/script.js' %}"></script>
 </body>
 </html>
