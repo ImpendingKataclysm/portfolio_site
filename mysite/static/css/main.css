@@ -57,14 +57,45 @@ nav.show {
     display: block;
 }
 
+nav ul {
+    list-style-type: none;
+    margin: 1.5rem 0 0 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav a:link, nav a:visited {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+
 /* Wide Screen */
 @media screen and (min-width: 1080px) {
+    /* Header */
+    .title {
+        font-size: 1.9rem;
+    }
+
     /* Nav bar */
     nav {
         display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
     }
 
     .nav-btn {
         display: none;
+    }
+
+    nav ul {
+        display: flex;
+        margin: 0;
+    }
+
+    nav a:link, nav a:visited {
+        font-size: 1.5rem;
     }
 }
