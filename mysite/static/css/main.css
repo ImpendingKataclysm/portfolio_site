@@ -26,10 +26,11 @@ h1, h2, .title a {
     grid-template-columns: 1fr 1fr;
 }
 
-.title {
+.title h1 {
     font-size: 1.5rem;
     font-style: italic;
     padding: 0.3rem;
+    margin: 0;
 }
 
 .title a:link, .title a:visited {
@@ -74,7 +75,7 @@ nav a:link, nav a:visited {
 /* Wide Screen */
 @media screen and (min-width: 1080px) {
     /* Header */
-    .title {
+    .title h1 {
         font-size: 1.9rem;
     }
 
