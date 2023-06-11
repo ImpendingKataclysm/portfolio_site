@@ -10,11 +10,13 @@
 <body>
     <div>
        <header>
-           <div>
-               <a href="{% url 'home' %}">Katie Janzen - Web Developer</a>
-           </div>
-           <div class="nav-btn" id="nav-display">
-               <img src="{% static 'images/nav_icon.png' %}" alt="nav button icon">
+           <div class="header-wrap">
+               <div class="title">
+                   <a href="{% url 'home' %}">Katie Janzen - Web Developer</a>
+               </div>
+               <figure class="nav-btn" id="nav-display">
+                   <img src="{% static 'images/nav_icon.png' %}" alt="nav button icon">
+               </figure>
            </div>
            <nav id="navbar">
                <ul>
