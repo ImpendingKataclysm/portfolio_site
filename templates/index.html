@@ -1,20 +1,22 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}Home{% endblock %}
 {% block content %}
-    <h2>Katie Janzen</h2>
-    <p>Nice to meet you!</p>
-    <section>
-        <h2>A little bit about me...</h2>
-        <p>{% lorem %}</p>
-        <p><a href="{% url 'about' %}">More details here!</a></p>
-    </section>
-    <section>
-        <h2><a href="{% url 'projects' %}">My projects</a></h2>
-        <p>{% lorem %}</p>
-    </section>
-    <section>
-        <h2><a href="{% url 'contact' %}">Get in touch</a></h2>
-        <p>{% lorem %}</p>
-    </section>
+    <div class="page_head">
+        <div class="home_title">
+            <figure>
+                <img src="{% static 'images/profile.jpg' %}" alt="picture of the page author" class="profile">
+            </figure>
+            <div>
+                <h2>Katie Janzen</h2>
+                <p>Nice to meet you!</p>
+            </div>
+        </div>
+    </div>
+    <ul>
+        <li><a href="{% url 'about' %}">A little bit about me...</a></li>
+        <li><a href="{% url 'projects' %}">Check out some of my work</a></li>
+        <li><a href="{% url 'contact' %}">Get in touch</a></li>
+    </ul>
 {% endblock %}0

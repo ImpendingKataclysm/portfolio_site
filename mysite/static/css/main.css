@@ -40,7 +40,7 @@ h1, h2, .title a {
 }
 
 .title h1 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-style: italic;
 }
 
@@ -95,6 +95,18 @@ ul.plain_list {
     text-align: right;
 }
 
+/* Home Page */
+img.profile {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.home_title {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    gap: 0.5rem;
+}
+
 /* Wide Screen */
 @media screen and (min-width: 1080px) {
     /* Header */
@@ -121,5 +133,11 @@ ul.plain_list {
 
     nav a:link, nav a:visited {
         font-size: 1.5rem;
+    }
+
+    /* Home Page */
+    .home_title {
+        grid-template-columns: 10% 1fr;
+        gap: 1.5rem;
     }
 }
