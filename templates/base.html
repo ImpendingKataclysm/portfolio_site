@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Katie Janzen - {% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}">
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
 </head>
 <body>
@@ -34,14 +35,14 @@
         </main>
         <footer>
             <ul class="contact_list plain_list">
-                <li><a href="https://github.com/ImpendingKataclysm" target="_blank"><img src="{% static 'images/github-mark.png' %}" alt="GitHub logo"></a></li>
+                <li><a href="https://github.com/ImpendingKataclysm" target="_blank"><img src="{% static 'images/github-mark-white.png' %}" alt="GitHub logo"></a></li>
                 <li><a href="#" target="_blank"><img src="{% static 'images/linkedIn_logo_initials.png' %}" alt="LinkedIn logo"></a></li>
                 <li><a href="{% url 'contact' %}"><img src="{% static 'images/email-icon.png' %}" alt="Email icon"></a></li>
                 <li><a href="#" target="_blank"><img src="{% static 'images/resume.png' %}" alt="Resume icon"></a></li>
             </ul>
             <ul class="plain_list align-right">
                 <li><small><a class="plain_link" href="https://www.freepnglogos.com/pics/email" target="_blank">Email from freepnglogos.com</a></small></li>
-                <li><small><a class="plain_link" href="https://www.flaticon.com/free-icons/resume" target="_blank" title="resume icons">Resume icons created by Icongeek26 - Flaticon</a></small></li>
+                <li><small><a href="https://www.flaticon.com/free-icons/curriculum" title="curriculum icons">Curriculum icons created by Freepik - Flaticon</a></small></li>
             </ul>
         </footer>
     </div>

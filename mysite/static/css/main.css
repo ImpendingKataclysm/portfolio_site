@@ -3,8 +3,12 @@
     src: url("../fonts/Roboto-Regular.ttf");
 }
 
-html, body {
+* {
     box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
 }
 
 html, body, figure {
@@ -16,8 +20,32 @@ body {
     font-family: "Roboto Light", sans-serif;
 }
 
+body, a:link, a:visited {
+    color: #f4efef;
+}
+
+body:before {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #201F3D, #35364A);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
 h1, h2, .title a, dt {
     font-family: "Roboto", sans-serif;
+}
+
+h2 {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin: 1.1rem 0;
 }
 
 p, dd {
@@ -47,6 +75,7 @@ p, dd {
 .title h1 {
     font-size: 1.3rem;
     font-style: italic;
+    padding: 0.2rem
 }
 
 /* Nav menu button */
@@ -150,7 +179,7 @@ a.home_link:link, a.home_link:visited {
 /* About Page and Project Page */
 section {
     width: 90%;
-    margin: auto;
+    margin: 1.5rem auto;
 }
 
 .about_img img, .project_img img {
@@ -193,6 +222,7 @@ section {
     /* Header */
     .title h1 {
         font-size: 1.9rem;
+        padding: 1.2rem;
     }
 
     /* Nav bar */
