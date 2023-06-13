@@ -20,6 +20,14 @@ h1, h2, .title a {
     font-family: "Roboto", sans-serif;
 }
 
+.main_wrap {
+    width:90%;
+    margin: auto;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
 /* Header */
 .header-wrap {
     display: grid;
