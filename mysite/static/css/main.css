@@ -101,10 +101,24 @@ img.profile {
     border-radius: 50%;
 }
 
+.page_head {
+    height: 80vh;
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+}
+
 .home_title {
     display: grid;
     grid-template-columns: 30% 1fr;
     gap: 0.5rem;
+    width: 80%;
+    margin: auto;
+    grid-row: 2;
+}
+
+.home_title h2, .home_title p {
+    margin: 0;
+    padding: 0.5rem;
 }
 
 /* Wide Screen */
@@ -136,8 +150,21 @@ img.profile {
     }
 
     /* Home Page */
+    .page_head {
+        grid-template-columns: 1fr auto 1fr;
+    }
+
     .home_title {
-        grid-template-columns: 10% 1fr;
+        grid-template-columns: 20% 1fr;
         gap: 1.5rem;
+        grid-column: 2;
+    }
+
+    .home_title h2 {
+        font-size: 2.5rem;
+    }
+
+    .home_title p {
+        font-size: 1.5rem;
     }
 }
