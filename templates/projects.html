@@ -3,16 +3,24 @@
 
 {% block title %}Portfolio{% endblock %}
 {% block content %}
-    <p>Here are some projects that I've built:</p>
-    <dl>
-    {% for row in project_list %}
-        <dt>{{ row.name }}</dt>
-        <dd>{{ row.description }}</dd>
-        <dd><img src="{% static row.image_url %}" alt="{{ row.image_alt }}"></dd>
-        <dd><a href="{{ row.source_code_url }}" target="_blank">View Source Code</a></dd>
-        {% if row.live_url %}
-            <dd><a href="{{ row.live_url }}" target="_blank">View Live</a></dd>
-        {% endif %}
-    {% endfor %}
-    </dl>
+    <section>
+        <h2>My Projects</h2>
+        <dl class="project_list">
+        {% for row in project_list %}
+            <div class="project">
+                <dt>{{ row.name }}</dt>
+                <dd>{{ row.description }}</dd>
+                <dd>
+                    <figure class="project_img">
+                        <img src="{% static row.image_url %}" alt="{{ row.image_alt }}">
+                    </figure>
+                </dd>
+                <dd><a class="project_src_link" href="{{ row.source_code_url }}" target="_blank"><img src="{% static 'images/github-mark.png' %}" alt="GitHub logo"> Source Code</a></dd>
+                {% if row.live_url %}
+                    <dd><a href="{{ row.live_url }}" target="_blank">View Live</a></dd>
+                {% endif %}
+            </div>
+        {% endfor %}
+        </dl>
+    </section>
 {% endblock %}

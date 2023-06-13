@@ -16,8 +16,13 @@ body {
     font-family: "Roboto Light", sans-serif;
 }
 
-h1, h2, .title a {
+h1, h2, .title a, dt {
     font-family: "Roboto", sans-serif;
+}
+
+p, dd {
+    font-size: 1.2rem;
+    line-height: 1.5;
 }
 
 .main_wrap {
@@ -142,14 +147,35 @@ a.home_link:link, a.home_link:visited {
     font-size: 1.4rem;
 }
 
-/* About Page */
+/* About Page and Project Page */
 section {
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 
-.about_img img {
+.about_img img, .project_img img {
     width: 100%;
+}
+
+.project {
+    margin: 2.5rem 0;
+}
+
+.project_list dt {
+    font-size: 1.8rem;
+}
+
+.project_list dd{
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.project_src_link img {
+    max-width: 10%;
+}
+
+.project_src_link {
+    line-height: 1.5;
 }
 
 /* Wide Screen */
@@ -228,5 +254,12 @@ section {
     figure.about_img {
         width: 85%;
         margin: auto;
+    }
+
+    /* Projects Page */
+    dl.project_list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.2rem;
     }
 }
