@@ -30,6 +30,18 @@
         <main>
             {% block content %}{% endblock %}
         </main>
+        <footer>
+            <ul>
+                <li><a href="https://github.com/ImpendingKataclysm" target="_blank"><img src="{% static 'images/github-mark.png' %}" alt="GitHub logo"></a></li>
+                <li><a href="#" target="_blank"><img src="{% static 'images/linkedIn_logo_initials.png' %}" alt="LinkedIn logo"></a></li>
+                <li><a href="{% url 'contact' %}"><img src="{% static 'images/email-icon.png' %}" alt="Email icon"></a></li>
+                <li><a href="#" target="_blank"><img src="{% static 'images/resume.png' %}" alt="Resume icon"></a></li>
+            </ul>
+            <ul>
+                <li><small><a href="https://www.freepnglogos.com/pics/email" target="_blank">Email from freepnglogos.com</a></small></li>
+                <li><small><a href="https://www.flaticon.com/free-icons/resume" target="_blank" title="resume icons">Resume icons created by Icongeek26 - Flaticon</a></small></li>
+            </ul>
+        </footer>
     </div>
     <script src="{% static 'js/script.js' %}"></script>
 </body>
