@@ -178,6 +178,16 @@ section {
     line-height: 1.5;
 }
 
+/* Contact Page */
+.form_input {
+    margin: 1.2rem 0;
+}
+
+.form_input textarea {
+    width: 100%;
+    height: 4.5rem;
+}
+
 /* Wide Screen */
 @media screen and (min-width: 1080px) {
     /* Header */
@@ -261,5 +271,16 @@ section {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 1.2rem;
+    }
+
+    /* Contact Page */
+    .card {
+        width: 50%;
+        margin: auto;
+    }
+
+    .form_input textarea {
+        width: 80%;
+        height: 10rem;
     }
 }
