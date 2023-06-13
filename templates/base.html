@@ -12,18 +12,18 @@
        <header>
            <div class="header-wrap">
                <div class="title">
-                   <h1><a href="{% url 'home' %}">Katie Janzen - Web Developer</a></h1>
+                   <h1><a href="{% url 'home' %}" class="plain_link">Katie Janzen - Web Developer</a></h1>
                </div>
                <figure class="nav-btn" id="nav-display">
                    <img src="{% static 'images/nav_icon.png' %}" alt="nav button icon">
                </figure>
            </div>
            <nav id="navbar">
-               <ul>
-                   <li><a href="{% url 'home' %}">Home</a></li>
-                   <li><a href="{% url 'about' %}">About</a></li>
-                   <li><a href="{% url 'projects' %}">Projects</a></li>
-                   <li><a href="{% url 'contact' %}">Contact</a></li>
+               <ul class="plain_list">
+                   <li><a class="plain_link" href="{% url 'home' %}">Home</a></li>
+                   <li><a class="plain_link" href="{% url 'about' %}">About</a></li>
+                   <li><a class="plain_link" href="{% url 'projects' %}">Projects</a></li>
+                   <li><a class="plain_link" href="{% url 'contact' %}">Contact</a></li>
                </ul>
            </nav>
        </header>
@@ -31,15 +31,15 @@
             {% block content %}{% endblock %}
         </main>
         <footer>
-            <ul>
+            <ul class="contact_list plain_list">
                 <li><a href="https://github.com/ImpendingKataclysm" target="_blank"><img src="{% static 'images/github-mark.png' %}" alt="GitHub logo"></a></li>
                 <li><a href="#" target="_blank"><img src="{% static 'images/linkedIn_logo_initials.png' %}" alt="LinkedIn logo"></a></li>
                 <li><a href="{% url 'contact' %}"><img src="{% static 'images/email-icon.png' %}" alt="Email icon"></a></li>
                 <li><a href="#" target="_blank"><img src="{% static 'images/resume.png' %}" alt="Resume icon"></a></li>
             </ul>
-            <ul>
-                <li><small><a href="https://www.freepnglogos.com/pics/email" target="_blank">Email from freepnglogos.com</a></small></li>
-                <li><small><a href="https://www.flaticon.com/free-icons/resume" target="_blank" title="resume icons">Resume icons created by Icongeek26 - Flaticon</a></small></li>
+            <ul class="plain_list align-right">
+                <li><small><a class="plain_link" href="https://www.freepnglogos.com/pics/email" target="_blank">Email from freepnglogos.com</a></small></li>
+                <li><small><a class="plain_link" href="https://www.flaticon.com/free-icons/resume" target="_blank" title="resume icons">Resume icons created by Icongeek26 - Flaticon</a></small></li>
             </ul>
         </footer>
     </div>
