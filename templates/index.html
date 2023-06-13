@@ -14,9 +14,11 @@
             </div>
         </div>
     </div>
-    <ul>
-        <li><a href="{% url 'about' %}">A little bit about me...</a></li>
-        <li><a href="{% url 'projects' %}">Check out some of my work</a></li>
-        <li><a href="{% url 'contact' %}">Get in touch</a></li>
-    </ul>
+    <div class="link_container">
+        <ul class="link_list">
+            <li><a class="plain_link home_link" href="{% url 'about' %}">A little bit about me...</a></li>
+            <li><a class="plain_link home_link" href="{% url 'projects' %}">Check out some of my work</a></li>
+            <li><a class="plain_link home_link" href="{% url 'contact' %}">Get in touch</a></li>
+        </ul>
+    </div>
 {% endblock %}0

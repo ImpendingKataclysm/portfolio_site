@@ -102,7 +102,7 @@ img.profile {
 }
 
 .page_head {
-    height: 80vh;
+    height: 100vh;
     display: grid;
     grid-template-rows: 1fr auto 1fr;
 }
@@ -119,6 +119,27 @@ img.profile {
 .home_title h2, .home_title p {
     margin: 0;
     padding: 0.5rem;
+}
+
+.link_container {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+}
+
+.link_list {
+    padding: 0;
+    width: 90%;
+    margin: auto;
+    list-style-image: url("../images/list-icon.png");
+    grid-column: 2;
+}
+
+.link_list li {
+    line-height: 1.8;
+}
+
+a.home_link:link, a.home_link:visited {
+    font-size: 1.4rem;
 }
 
 /* Wide Screen */
@@ -166,5 +187,9 @@ img.profile {
 
     .home_title p {
         font-size: 1.5rem;
+    }
+
+    .link_list {
+        width: 100%;
     }
 }
